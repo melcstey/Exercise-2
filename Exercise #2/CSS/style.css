@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    min-height: 100%;
+    font-family: roboto mono;
+}
+/*HEADER AND SEARCH BAR*/
+.header {
+    display: grid;
+    grid-template-columns: 190vh;
+    grid-template-areas: "a a a a"
+}
+.home {
+    display: grid;
+    grid-area: a;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #AA5042;
+}
+.home {
+    display: block;
+    color: #461220;
+    font-size: 30px;
+    text-align: left;
+    padding: 60px;
+    text-decoration: none;
+}
+.home:hover {
+    background-color: #8B2635;
+}
+/*
+.search 
+    grid-template-columns: repeat(4, 1fr);
+    float: right;
+}
+                     I could not get the search bar to line up on top (in the header)
+.search__field {
+    grid-columns: 4 / span1;
+    background: transparent;
+    font-size: 1.2em;
+}
+
+.search--light .search__field {border:2px solid black;}
+*/
+
+/*IMAGE GALLERY*/
+
+.header--photo {
+    display: grid;
+    margin: 2rem;
+    grid-template-areas: ". b c d e "
+                         ". b f d e "
+}
+.photo1 {
+    width: 500px;
+    grid-area: b;
+}
+.photo2 {
+    width: 500px;
+    grid-area: c;
+}
+.photo3 {
+    width: 500px;
+    grid-area: f;
+}
+.photo4 {
+    width: 500px;
+    grid-area: d;
+}
+
+/*VIEW STORIES HERE BUTTON*/
+.button {
+    display: grid;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    grid-template-columns: repeat(5, 1fr);
+}
+.button1 {
+    grid-column: 3 / span 1;
+    font-family: roboto mono;
+    font-size: 30px;
+    background-color: #704C5E;
+    color: #461220;
+    border: 5px solid #461220;
+}
+
+/*STORY PHOTOS/TITLES/BUTTONS*/
+.story--photos {
+    display: grid;
+    margin: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.story1 {
+    width: 500px;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.story2 {
+    width: 500px;
+    grid-column: 2 / span 4;
+    grid-row: 2/ span 2;
+}
+
+.story__month {
+    font-size: 25px;
+    color: #461220;
+    text-align: center;
+    grid-column: 3/ span 1;
+    grid-row: 1 / span 1;
+}
+
+
+.story {
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    text-decoration: none;
+
+}
+
+
+.button2 {   
+    grid-column: 2 / span 1;
+    font-size: 20px;
+    background-color: #b08d9c;
+    color: #461220;
+    border: #461220;
+    
+}
+
+.story3 {
+    width: 500px;
+    grid-column: 6 / span 2;
+    grid-row: 1 / span 1;
+}
+
+.story4 {
+    width: 500px;
+    grid-column: 5 / span 2;
+    grid-row: 2 / span 2;
+}
+
+h2 {
+    font-size: 25px;
+    color: #461220;
+    text-align: center;
+    grid-column: 5 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.button3 {
+    grid-column: 5 / span 1;
+    font-size: 20px;
+    background-color: #b08d9c;
+    color: #461220;
+    border: #461220;
+}
+
+.story5 {
+    margin-top: 50px;
+    width: 500px;
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 1;
+}
+
+h3 {
+    font-size: 25px;
+    color: #461220;
+    text-align: left;
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+}
+
+/*I DON'T UNDERSTAND WHY I COULDN'T TAKE OFF THE UNDERLINE AND MAKE THE BUTTON THE SAME SIZE OF THE OTHERS*/
+.click {
+    grid-column: 1 / span 2;
+    grid-row: 7 / span 1;
+    margin: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #b08d9c;
+    color: #461220;
+    border: #461220;
+}
+
+/*
+.button4 {
+    grid-column: 1 / span 2;
+    font-size: 20px;
+    background-color: #b08d9c;
+    color: #461220;
+    border: #461220;
+}
+*/
+
+.story6 {
+    margin-top: 50px;
+    width: 500px;
+    grid-column: 4 / span 1;
+    grid-row: 5 / span 2;
+}
+
+h4 {
+    font-size: 25px;
+    color: #461220;
+    text-align: center;
+    grid-column: 4 / span 1;
+    grid-row: 6 / span 1;
+}
+
+.button5 {
+    grid-column: 4 / span 1;
+    font-size: 20px;
+    background-color: #b08d9c;
+    color: #461220;
+    border: #461220;
+}
+
+.story7 {
+    margin-top: 50px;
+    width: 500px;
+    grid-column: 6 / span 2;
+    grid-row: 5 / span 2;
+}
+
+h5 {
+    font-size: 25px;
+    color: #461220;
+    text-align: right;
+    grid-column: 7 / span 1;
+    grid-row: 6 / span 1;
+}
+
+.button6 {
+    grid-column: 6 / span 2;
+    font-size: 20px;
+    background-color: #b08d9c;
+    color: #461220;
+    border: #461220;
+}
+
+
+/*2nd PAGE CODE*/
+.main--story {
+    display: grid;
+    margin: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    
+}
+
+.alarm {
+    width: 500px;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+   
+}
+
+.coffee {
+    width: 500px;
+    grid-column: 3 / span 1;
+    grid-row: 1 / 3;
+   
+}
+
+.story__details {
+    grid-column: 2/ span 1;
+    grid-row: 2 / span 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 25px;
+    margin: 0;
+    background: #704C5E;
+    color: #461220;
+    text-decoration: none;
+}
+
+.story__title {
+    font-size: 30px;
+    grid-column: 3/ span 1;
+    grid-row: 3 / span 1;
+    text-align: right;
+}
+
+.click2 {
+    display: flex;
+    justify-content: center;
+    margin: 150px;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #b08d9c;
+    color: #461220;
+    border: #461220;
+    font-family: roboto mono;
+}
+
+
